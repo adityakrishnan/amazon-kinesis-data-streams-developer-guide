@@ -42,7 +42,3 @@ Data is put into Kinesis data streams, which ensures durability and elasticity\.
 Multiple Kinesis Data Streams applications can consume data from a stream, so that multiple actions, like archiving and processing, can take place concurrently and independently\. For example, two applications can read data from the same stream\. The first application calculates running aggregates and updates an Amazon DynamoDB table, and the second application compresses and archives data to a data store like Amazon Simple Storage Service \(Amazon S3\)\. The DynamoDB table with running aggregates is then read by a dashboard for up\-to\-the\-minute reports\.
 
 The Kinesis Client Library enables fault\-tolerant consumption of data from streams and provides scaling support for Kinesis Data Streams applications\.
-
-## Related Services<a name="related-services"></a>
-
-For information about using Amazon EMR clusters to read and process Kinesis data streams directly, see [Kinesis Connector](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-kinesis.html)\.
